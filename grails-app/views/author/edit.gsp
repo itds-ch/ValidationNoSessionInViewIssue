@@ -26,6 +26,11 @@
                 </g:eachError>
             </ul>
             </g:hasErrors>
+
+            <div>
+                Current value of books: ${this.author.books}
+            </div>
+
             <g:form resource="${this.author}" method="PUT">
                 <g:hiddenField name="version" value="${this.author?.version}" />
                 <fieldset class="form">
